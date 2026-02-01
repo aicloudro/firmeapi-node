@@ -1,0 +1,55 @@
+{
+  "name": "firmeapi",
+  "version": "1.0.0",
+  "description": "Official Node.js SDK for FirmeAPI.ro - Romanian company data API",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "lint": "eslint src/**/*.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "firmeapi",
+    "romania",
+    "company",
+    "api",
+    "cui",
+    "anaf",
+    "business",
+    "sdk"
+  ],
+  "author": "FirmeAPI.ro",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aicloudro/firmeapi-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aicloudro/firmeapi-node/issues"
+  },
+  "homepage": "https://www.firmeapi.ro",
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
