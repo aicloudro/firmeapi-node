@@ -1,9 +1,6 @@
 {
-  "name": "@firmeapi/sdk",
+  "name": "firmeapi",
   "version": "1.0.0",
-  "publishConfig": {
-    "access": "public"
-  },
   "description": "Official Node.js SDK for FirmeAPI.ro - Romanian company data API",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
