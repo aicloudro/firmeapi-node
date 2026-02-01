@@ -5,13 +5,13 @@ Official Node.js/TypeScript SDK for [FirmeAPI.ro](https://www.firmeapi.ro) - Rom
 ## Installation
 
 ```bash
-npm install @aicloudro/firmeapi
+npm install @firmeapi/sdk
 ```
 
 ## Quick Start
 
 ```typescript
-import FirmeApi from '@aicloudro/firmeapi';
+import FirmeApi from '@firmeapi/sdk';
 
 const client = new FirmeApi({
   apiKey: 'your_api_key_here',
@@ -140,7 +140,7 @@ import FirmeApi, {
   RateLimitError,
   InsufficientCreditsError,
   ValidationError,
-} from '@aicloudro/firmeapi';
+} from '@firmeapi/sdk';
 
 try {
   const company = await client.getCompany('12345678');
@@ -182,7 +182,7 @@ import type {
   MofResponse,
   SearchFilters,
   SearchResponse,
-} from '@aicloudro/firmeapi';
+} from '@firmeapi/sdk';
 ```
 
 ## License
